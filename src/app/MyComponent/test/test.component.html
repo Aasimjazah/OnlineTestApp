@@ -1,0 +1,602 @@
+
+{{counter}}
+{{answer}}
+{{myArray | json}}
+<div [ngSwitch]="counter">
+  <div *ngSwitchCase="1">
+    <div class="container mt-5">
+      <div class="d-flex justify-content-center row">
+          <div class="col-md-10 col-lg-10">
+              <div class="border">
+                  <div class="question bg-white p-3 border-bottom">
+                      <div class="d-flex flex-row justify-content-between align-items-center mcq">
+                          <h4>MCQ Quiz 1</h4><span>({{counter}} of 15)</span></div>
+                  </div>
+                  <div class="question bg-white p-3 border-bottom">
+                      <div class="d-flex flex-row align-items-center question-title">
+                          <h3 class="text-danger">Q.</h3>
+                          <h5 class="mt-1 ml-2">Which of the following country has largest population?</h5>
+                      </div><div class="ans ml-2">
+    <label class="radio"> <input type="radio" name="myArray[1]" [(ngModel)]="myArray[1]" value="brazil" > <span>Brazil</span>
+    </label>
+    </div><div class="ans ml-2">
+    <label class="radio"> <input type="radio" name="myArray[1]" [(ngModel)]="myArray[1]" value="Germany"> <span>Germany</span>
+    </label>
+    </div><div class="ans ml-2">
+    <label class="radio"> <input type="radio" name="myArray[1]" [(ngModel)]="myArray[1]" value="Indonesia"> <span>Indonesia</span>
+    </label>
+    </div><div class="ans ml-2">
+    <label class="radio"> <input type="radio" name="myArray[1]" [(ngModel)]="myArray[1]" value="Russia"> <span>Russia</span>
+    </label>
+    </div></div>
+                  <div class="d-flex flex-row justify-content-between align-items-center p-3 bg-white"><button  class="btn btn-primary d-flex align-items-center btn-danger" ></button><button *ngIf="myArray[1].length>0" class="btn btn-primary border-success align-items-center btn-success" (click)="next(1)" type="button">Next<i class="fa fa-angle-right ml-2"></i></button></div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+
+
+
+
+<div [ngSwitch]="counter">
+  <div *ngSwitchCase="2">
+    <div class="container mt-5">
+      <div class="d-flex justify-content-center row">
+          <div class="col-md-10 col-lg-10">
+              <div class="border">
+                  <div class="question bg-white p-3 border-bottom">
+                      <div class="d-flex flex-row justify-content-between align-items-center mcq">
+                          <h4>MCQ Quiz {{counter}}</h4><span>({{counter}} of 15)</span></div>
+                  </div>
+                  <div class="question bg-white p-3 border-bottom">
+                      <div class="d-flex flex-row align-items-center question-title">
+                          <h3 class="text-danger">Q.</h3>
+                          <h5 class="mt-1 ml-2">Which of the following country has largest population?</h5>
+                      </div><div class="ans ml-2">
+    <label class="radio"> <input type="radio" name="myArray[2]" [(ngModel)]="myArray[2]" value="brazil"> <span>Brazil</span>
+    </label>
+    </div><div class="ans ml-2">
+    <label class="radio"> <input type="radio" name="myArray[2]" [(ngModel)]="myArray[2]" value="Germany"> <span>Germany</span>
+    </label>
+    </div><div class="ans ml-2">
+    <label class="radio"> <input type="radio" name="myArray[2]" [(ngModel)]="myArray[2]" value="Indonesia"> <span>Indonesia</span>
+    </label>
+    </div><div class="ans ml-2">
+    <label class="radio"> <input type="radio" name="myArray[2]" [(ngModel)]="myArray[2]" value="Russia"> <span>Russia</span>
+    </label>
+    </div></div>
+                  <div class="d-flex flex-row justify-content-between align-items-center p-3 bg-white"><button class="btn btn-primary d-flex align-items-center btn-danger" (click)="previous(2)" type="button"><i class="fa fa-angle-left mt-1 mr-1"></i>&nbsp;previous</button><button *ngIf="myArray[2].length>0" class="btn btn-primary border-success align-items-center btn-success" (click)="next(2)" type="button">Next<i class="fa fa-angle-right ml-2"></i></button></div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+<div [ngSwitch]="counter">
+  <div *ngSwitchCase="3">
+    <div class="container mt-5">
+      <div class="d-flex justify-content-center row">
+          <div class="col-md-10 col-lg-10">
+              <div class="border">
+                  <div class="question bg-white p-3 border-bottom">
+                      <div class="d-flex flex-row justify-content-between align-items-center mcq">
+                          <h4>MCQ Quiz {{counter}}</h4><span>({{counter}} of 15)</span></div>
+                  </div>
+                  <div class="question bg-white p-3 border-bottom">
+                      <div class="d-flex flex-row align-items-center question-title">
+                          <h3 class="text-danger">Q.</h3>
+                          <h5 class="mt-1 ml-2">Which of the following country has largest population?</h5>
+                      </div><div class="ans ml-2">
+    <label class="radio"> <input type="radio" name="myArray[3]" [(ngModel)]="myArray[3]" value="brazil"> <span>Brazil</span>
+    </label>
+    </div><div class="ans ml-2">
+    <label class="radio"> <input type="radio" name="myArray[3]" [(ngModel)]="myArray[3]" value="Germany"> <span>Germany</span>
+    </label>
+    </div><div class="ans ml-2">
+    <label class="radio"> <input type="radio" name="myArray[3]" [(ngModel)]="myArray[3]" value="Indonesia"> <span>Indonesia</span>
+    </label>
+    </div><div class="ans ml-2">
+    <label class="radio"> <input type="radio" name="myArray[3]" [(ngModel)]="myArray[3]" value="Russia"> <span>Russia</span>
+    </label>
+    </div></div>
+                  <div class="d-flex flex-row justify-content-between align-items-center p-3 bg-white"><button class="btn btn-primary d-flex align-items-center btn-danger" (click)="previous(3)" type="button"><i class="fa fa-angle-left mt-1 mr-1"></i>&nbsp;previous</button><button *ngIf="myArray[3].length>0" class="btn btn-primary border-success align-items-center btn-success" (click)="next(3)" type="button">Next<i class="fa fa-angle-right ml-2"></i></button></div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<div [ngSwitch]="counter">
+  <div *ngSwitchCase="4">
+    <div class="container mt-5">
+      <div class="d-flex justify-content-center row">
+          <div class="col-md-10 col-lg-10">
+              <div class="border">
+                  <div class="question bg-white p-3 border-bottom">
+                      <div class="d-flex flex-row justify-content-between align-items-center mcq">
+                          <h4>MCQ Quiz {{counter}}</h4><span>({{counter}} of 15)</span></div>
+                  </div>
+                  <div class="question bg-white p-3 border-bottom">
+                      <div class="d-flex flex-row align-items-center question-title">
+                          <h3 class="text-danger">Q.</h3>
+                          <h5 class="mt-1 ml-2">Which of the following country has largest population?</h5>
+                      </div><div class="ans ml-2">
+    <label class="radio"> <input type="radio" name="myArray[4]" [(ngModel)]="myArray[4]" value="brazil"> <span>Brazil</span>
+    </label>
+    </div><div class="ans ml-2">
+    <label class="radio"> <input type="radio" name="myArray[4]" [(ngModel)]="myArray[4]" value="Germany"> <span>Germany</span>
+    </label>
+    </div><div class="ans ml-2">
+    <label class="radio"> <input type="radio" name="myArray[4]" [(ngModel)]="myArray[4]" value="Indonesia"> <span>Indonesia</span>
+    </label>
+    </div><div class="ans ml-2">
+    <label class="radio"> <input type="radio" name="myArray[4]" [(ngModel)]="myArray[4]" value="Russia"> <span>Russia</span>
+    </label>
+    </div></div>
+                  <div class="d-flex flex-row justify-content-between align-items-center p-3 bg-white"><button class="btn btn-primary d-flex align-items-center btn-danger" (click)="previous(4)" type="button"><i class="fa fa-angle-left mt-1 mr-1"></i>&nbsp;previous</button><button *ngIf="myArray[4].length>0" class="btn btn-primary border-success align-items-center btn-success" (click)="next(4)" type="button">Next<i class="fa fa-angle-right ml-2"></i></button></div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+<div [ngSwitch]="counter">
+  <div *ngSwitchCase="5">
+    <div class="container mt-5">
+      <div class="d-flex justify-content-center row">
+          <div class="col-md-10 col-lg-10">
+              <div class="border">
+                  <div class="question bg-white p-3 border-bottom">
+                      <div class="d-flex flex-row justify-content-between align-items-center mcq">
+                          <h4>MCQ Quiz {{counter}}</h4><span>({{counter}} of 15)</span></div>
+                  </div>
+                  <div class="question bg-white p-3 border-bottom">
+                      <div class="d-flex flex-row align-items-center question-title">
+                          <h3 class="text-danger">Q.</h3>
+                          <h5 class="mt-1 ml-2">Which of the following country has largest population?</h5>
+                      </div><div class="ans ml-2">
+    <label class="radio"> <input type="radio" name="myArray[5]" [(ngModel)]="myArray[5]" value="brazil"> <span>Brazil</span>
+    </label>
+    </div><div class="ans ml-2">
+    <label class="radio"> <input type="radio" name="myArray[5]" [(ngModel)]="myArray[5]" value="Germany"> <span>Germany</span>
+    </label>
+    </div><div class="ans ml-2">
+    <label class="radio"> <input type="radio" name="myArray[5]" [(ngModel)]="myArray[5]" value="Indonesia"> <span>Indonesia</span>
+    </label>
+    </div><div class="ans ml-2">
+    <label class="radio"> <input type="radio" name="myArray[5]" [(ngModel)]="myArray[5]" value="Russia"> <span>Russia</span>
+    </label>
+    </div></div>
+                  <div class="d-flex flex-row justify-content-between align-items-center p-3 bg-white"><button class="btn btn-primary d-flex align-items-center btn-danger" (click)="previous(5)" type="button"><i class="fa fa-angle-left mt-1 mr-1"></i>&nbsp;previous</button><button *ngIf="myArray[5].length>0" class="btn btn-primary border-success align-items-center btn-success" (click)="next(5)" type="button">Next<i class="fa fa-angle-right ml-2"></i></button></div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+<div [ngSwitch]="counter">
+  <div *ngSwitchCase="6">
+    <div class="container mt-5">
+      <div class="d-flex justify-content-center row">
+          <div class="col-md-10 col-lg-10">
+              <div class="border">
+                  <div class="question bg-white p-3 border-bottom">
+                      <div class="d-flex flex-row justify-content-between align-items-center mcq">
+                          <h4>MCQ Quiz {{counter}}</h4><span>({{counter}} of 15)</span></div>
+                  </div>
+                  <div class="question bg-white p-3 border-bottom">
+                      <div class="d-flex flex-row align-items-center question-title">
+                          <h3 class="text-danger">Q.</h3>
+                          <h5 class="mt-1 ml-2">Which of the following country has largest population?</h5>
+                      </div><div class="ans ml-2">
+    <label class="radio"> <input type="radio" name="myArray[6]" [(ngModel)]="myArray[6]" value="brazil"> <span>Brazil</span>
+    </label>
+    </div><div class="ans ml-2">
+    <label class="radio"> <input type="radio" name="myArray[6]" [(ngModel)]="myArray[6]" value="Germany"> <span>Germany</span>
+    </label>
+    </div><div class="ans ml-2">
+    <label class="radio"> <input type="radio" name="myArray[6]" [(ngModel)]="myArray[6]" value="Indonesia"> <span>Indonesia</span>
+    </label>
+    </div><div class="ans ml-2">
+    <label class="radio"> <input type="radio" name="myArray[6]" [(ngModel)]="myArray[6]" value="Russia"> <span>Russia</span>
+    </label>
+    </div></div>
+                  <div class="d-flex flex-row justify-content-between align-items-center p-3 bg-white"><button class="btn btn-primary d-flex align-items-center btn-danger" (click)="previous(6)" type="button"><i class="fa fa-angle-left mt-1 mr-1"></i>&nbsp;previous</button><button *ngIf="myArray[6].length>0" class="btn btn-primary border-success align-items-center btn-success" (click)="next(6)" type="button">Next<i class="fa fa-angle-right ml-2"></i></button></div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+
+
+
+
+<div [ngSwitch]="counter">
+  <div *ngSwitchCase="7">
+    <div class="container mt-5">
+      <div class="d-flex justify-content-center row">
+          <div class="col-md-10 col-lg-10">
+              <div class="border">
+                  <div class="question bg-white p-3 border-bottom">
+                      <div class="d-flex flex-row justify-content-between align-items-center mcq">
+                          <h4>MCQ Quiz {{counter}}</h4><span>({{counter}} of 15)</span></div>
+                  </div>
+                  <div class="question bg-white p-3 border-bottom">
+                      <div class="d-flex flex-row align-items-center question-title">
+                          <h3 class="text-danger">Q.</h3>
+                          <h5 class="mt-1 ml-2">Which of the following country has largest population?</h5>
+                      </div><div class="ans ml-2">
+    <label class="radio"> <input type="radio" name="myArray[7]" [(ngModel)]="myArray[7]" value="brazil"> <span>Brazil</span>
+    </label>
+    </div><div class="ans ml-2">
+    <label class="radio"> <input type="radio" name="myArray[7]" [(ngModel)]="myArray[7]" value="Germany"> <span>Germany</span>
+    </label>
+    </div><div class="ans ml-2">
+    <label class="radio"> <input type="radio" name="myArray[7]" [(ngModel)]="myArray[7]" value="Indonesia"> <span>Indonesia</span>
+    </label>
+    </div><div class="ans ml-2">
+    <label class="radio"> <input type="radio" name="myArray[7]" [(ngModel)]="myArray[7]" value="Russia"> <span>Russia</span>
+    </label>
+    </div></div>
+                  <div class="d-flex flex-row justify-content-between align-items-center p-3 bg-white"><button class="btn btn-primary d-flex align-items-center btn-danger" (click)="previous(7)" type="button"><i class="fa fa-angle-left mt-1 mr-1"></i>&nbsp;previous</button><button *ngIf="myArray[7].length>0" class="btn btn-primary border-success align-items-center btn-success" (click)="next(7)" type="button">Next<i class="fa fa-angle-right ml-2"></i></button></div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+<div [ngSwitch]="counter">
+  <div *ngSwitchCase="8">
+    <div class="container mt-5">
+      <div class="d-flex justify-content-center row">
+          <div class="col-md-10 col-lg-10">
+              <div class="border">
+                  <div class="question bg-white p-3 border-bottom">
+                      <div class="d-flex flex-row justify-content-between align-items-center mcq">
+                          <h4>MCQ Quiz {{counter}}</h4><span>({{counter}} of 15)</span></div>
+                  </div>
+                  <div class="question bg-white p-3 border-bottom">
+                      <div class="d-flex flex-row align-items-center question-title">
+                          <h3 class="text-danger">Q.</h3>
+                          <h5 class="mt-1 ml-2">Which of the following country has largest population?</h5>
+                      </div><div class="ans ml-2">
+    <label class="radio"> <input type="radio" name="myArray[8]" [(ngModel)]="myArray[8]" value="brazil"> <span>Brazil</span>
+    </label>
+    </div><div class="ans ml-2">
+    <label class="radio"> <input type="radio" name="myArray[8]" [(ngModel)]="myArray[8]" value="Germany"> <span>Germany</span>
+    </label>
+    </div><div class="ans ml-2">
+    <label class="radio"> <input type="radio" name="myArray[8]" [(ngModel)]="myArray[8]" value="Indonesia"> <span>Indonesia</span>
+    </label>
+    </div><div class="ans ml-2">
+    <label class="radio"> <input type="radio" name="myArray[8]" [(ngModel)]="myArray[8]" value="Russia"> <span>Russia</span>
+    </label>
+    </div></div>
+                  <div class="d-flex flex-row justify-content-between align-items-center p-3 bg-white"><button class="btn btn-primary d-flex align-items-center btn-danger" (click)="previous(8)" type="button"><i class="fa fa-angle-left mt-1 mr-1"></i>&nbsp;previous</button><button *ngIf="myArray[8].length>0" class="btn btn-primary border-success align-items-center btn-success" (click)="next(8)" type="button">Next<i class="fa fa-angle-right ml-2"></i></button></div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+
+
+
+
+<div [ngSwitch]="counter">
+  <div *ngSwitchCase="9">
+    <div class="container mt-5">
+      <div class="d-flex justify-content-center row">
+          <div class="col-md-10 col-lg-10">
+              <div class="border">
+                  <div class="question bg-white p-3 border-bottom">
+                      <div class="d-flex flex-row justify-content-between align-items-center mcq">
+                          <h4>MCQ Quiz {{counter}}</h4><span>({{counter}} of 15)</span></div>
+                  </div>
+                  <div class="question bg-white p-3 border-bottom">
+                      <div class="d-flex flex-row align-items-center question-title">
+                          <h3 class="text-danger">Q.</h3>
+                          <h5 class="mt-1 ml-2">Which of the following country has largest population?</h5>
+                      </div><div class="ans ml-2">
+    <label class="radio"> <input type="radio" name="myArray[9]" [(ngModel)]="myArray[9]" value="brazil"> <span>Brazil</span>
+    </label>
+    </div><div class="ans ml-2">
+    <label class="radio"> <input type="radio" name="myArray[9]" [(ngModel)]="myArray[9]" value="Germany"> <span>Germany</span>
+    </label>
+    </div><div class="ans ml-2">
+    <label class="radio"> <input type="radio" name="myArray[9]" [(ngModel)]="myArray[9]" value="Indonesia"> <span>Indonesia</span>
+    </label>
+    </div><div class="ans ml-2">
+    <label class="radio"> <input type="radio" name="myArray[9]" [(ngModel)]="myArray[9]" value="Russia"> <span>Russia</span>
+    </label>
+    </div></div>
+                  <div class="d-flex flex-row justify-content-between align-items-center p-3 bg-white"><button class="btn btn-primary d-flex align-items-center btn-danger" (click)="previous(9)" type="button"><i class="fa fa-angle-left mt-1 mr-1"></i>&nbsp;previous</button><button *ngIf="myArray[9].length>0" class="btn btn-primary border-success align-items-center btn-success" (click)="next(9)" type="button">Next<i class="fa fa-angle-right ml-2"></i></button></div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+
+
+
+
+<div [ngSwitch]="counter">
+  <div *ngSwitchCase="10">
+    <div class="container mt-5">
+      <div class="d-flex justify-content-center row">
+          <div class="col-md-10 col-lg-10">
+              <div class="border">
+                  <div class="question bg-white p-3 border-bottom">
+                      <div class="d-flex flex-row justify-content-between align-items-center mcq">
+                          <h4>MCQ Quiz {{counter}}</h4><span>({{counter}} of 15)</span></div>
+                  </div>
+                  <div class="question bg-white p-3 border-bottom">
+                      <div class="d-flex flex-row align-items-center question-title">
+                          <h3 class="text-danger">Q.</h3>
+                          <h5 class="mt-1 ml-2">Which of the following country has largest population?</h5>
+                      </div><div class="ans ml-2">
+    <label class="radio"> <input type="radio" name="myArray[10]" [(ngModel)]="myArray[10]" value="brazil"> <span>Brazil</span>
+    </label>
+    </div><div class="ans ml-2">
+    <label class="radio"> <input type="radio" name="myArray[10]" [(ngModel)]="myArray[10]" value="Germany"> <span>Germany</span>
+    </label>
+    </div><div class="ans ml-2">
+    <label class="radio"> <input type="radio" name="myArray[10]" [(ngModel)]="myArray[10]" value="Indonesia"> <span>Indonesia</span>
+    </label>
+    </div><div class="ans ml-2">
+    <label class="radio"> <input type="radio" name="myArray[10]" [(ngModel)]="myArray[10]" value="Russia"> <span>Russia</span>
+    </label>
+    </div></div>
+                  <div class="d-flex flex-row justify-content-between align-items-center p-3 bg-white"><button class="btn btn-primary d-flex align-items-center btn-danger" (click)="previous(10)" type="button"><i class="fa fa-angle-left mt-1 mr-1"></i>&nbsp;previous</button><button *ngIf="myArray[10].length>0" class="btn btn-primary border-success align-items-center btn-success" (click)="next(10)" type="button">Next<i class="fa fa-angle-right ml-2"></i></button></div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+
+
+
+
+<div [ngSwitch]="counter">
+  <div *ngSwitchCase="11">
+    <div class="container mt-5">
+      <div class="d-flex justify-content-center row">
+          <div class="col-md-10 col-lg-10">
+              <div class="border">
+                  <div class="question bg-white p-3 border-bottom">
+                      <div class="d-flex flex-row justify-content-between align-items-center mcq">
+                          <h4>MCQ Quiz {{counter}}</h4><span>({{counter}} of 15)</span></div>
+                  </div>
+                  <div class="question bg-white p-3 border-bottom">
+                      <div class="d-flex flex-row align-items-center question-title">
+                          <h3 class="text-danger">Q.</h3>
+                          <h5 class="mt-1 ml-2">Which of the following country has largest population?</h5>
+                      </div><div class="ans ml-2">
+    <label class="radio"> <input type="radio" name="myArray[11]" [(ngModel)]="myArray[11]" value="brazil"> <span>Brazil</span>
+    </label>
+    </div><div class="ans ml-2">
+    <label class="radio"> <input type="radio" name="myArray[11]" [(ngModel)]="myArray[11]" value="Germany"> <span>Germany</span>
+    </label>
+    </div><div class="ans ml-2">
+    <label class="radio"> <input type="radio" name="myArray[11]" [(ngModel)]="myArray[11]" value="Indonesia"> <span>Indonesia</span>
+    </label>
+    </div><div class="ans ml-2">
+    <label class="radio"> <input type="radio" name="myArray[11]" [(ngModel)]="myArray[11]" value="Russia"> <span>Russia</span>
+    </label>
+    </div></div>
+                  <div class="d-flex flex-row justify-content-between align-items-center p-3 bg-white"><button class="btn btn-primary d-flex align-items-center btn-danger" (click)="previous(11)" type="button"><i class="fa fa-angle-left mt-1 mr-1"></i>&nbsp;previous</button><button *ngIf="myArray[11].length>0" class="btn btn-primary border-success align-items-center btn-success" (click)="next(11)" type="button">Next<i class="fa fa-angle-right ml-2"></i></button></div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+<div [ngSwitch]="counter">
+  <div *ngSwitchCase="12">
+    <div class="container mt-5">
+      <div class="d-flex justify-content-center row">
+          <div class="col-md-10 col-lg-10">
+              <div class="border">
+                  <div class="question bg-white p-3 border-bottom">
+                      <div class="d-flex flex-row justify-content-between align-items-center mcq">
+                          <h4>MCQ Quiz {{counter}}</h4><span>({{counter}} of 15)</span></div>
+                  </div>
+                  <div class="question bg-white p-3 border-bottom">
+                      <div class="d-flex flex-row align-items-center question-title">
+                          <h3 class="text-danger">Q.</h3>
+                          <h5 class="mt-1 ml-2">Which of the following country has  largest population?</h5>
+                      </div><div class="ans ml-2">
+    <label class="radio"> <input type="radio" name="myArray[12]" [(ngModel)]="myArray[12]" value="brazil"> <span>Brazil</span>
+    </label>
+    </div><div class="ans ml-2">
+    <label class="radio"> <input type="radio" name="myArray[12]" [(ngModel)]="myArray[12]" value="Germany"> <span>Germany</span>
+    </label>
+    </div><div class="ans ml-2">
+    <label class="radio"> <input type="radio" name="myArray[12]" [(ngModel)]="myArray[12]" value="Indonesia"> <span>Indonesia</span>
+    </label>
+    </div><div class="ans ml-2">
+    <label class="radio"> <input type="radio" name="myArray[12]" [(ngModel)]="myArray[12]" value="Russia"> <span>Russia</span>
+    </label>
+    </div></div>
+                  <div class="d-flex flex-row justify-content-between align-items-center p-3 bg-white"><button class="btn btn-primary d-flex align-items-center btn-danger" (click)="previous(12)" type="button"><i class="fa fa-angle-left mt-1 mr-1"></i>&nbsp;previous</button><button *ngIf="myArray[12].length>0" class="btn btn-primary border-success align-items-center btn-success" (click)="next(12)" type="button">Next<i class="fa fa-angle-right ml-2"></i></button></div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+
+
+
+
+<div [ngSwitch]="counter">
+  <div *ngSwitchCase="13">
+    <div class="container mt-5">
+      <div class="d-flex justify-content-center row">
+          <div class="col-md-10 col-lg-10">
+              <div class="border">
+                  <div class="question bg-white p-3 border-bottom">
+                      <div class="d-flex flex-row justify-content-between align-items-center mcq">
+                          <h4>MCQ Quiz {{counter}}</h4><span>({{counter}} of 15)</span></div>
+                  </div>
+                  <div class="question bg-white p-3 border-bottom">
+                      <div class="d-flex flex-row align-items-center question-title">
+                          <h3 class="text-danger">Q.</h3>
+                          <h5 class="mt-1 ml-2">Which of the following country has largest population?</h5>
+                      </div><div class="ans ml-2">
+    <label class="radio"> <input type="radio" name="myArray[13]" [(ngModel)]="myArray[13]" value="brazil"> <span>Brazil</span>
+    </label>
+    </div><div class="ans ml-2">
+    <label class="radio"> <input type="radio" name="myArray[13]" [(ngModel)]="myArray[13]" value="Germany"> <span>Germany</span>
+    </label>
+    </div><div class="ans ml-2">
+    <label class="radio"> <input type="radio" name="myArray[13]" [(ngModel)]="myArray[13]" value="Indonesia"> <span>Indonesia</span>
+    </label>
+    </div><div class="ans ml-2">
+    <label class="radio"> <input type="radio" name="myArray[13]" [(ngModel)]="myArray[13]" value="Russia"> <span>Russia</span>
+    </label>
+    </div></div>
+                  <div class="d-flex flex-row justify-content-between align-items-center p-3 bg-white"><button class="btn btn-primary d-flex align-items-center btn-danger" (click)="previous(13)" type="button"><i class="fa fa-angle-left mt-1 mr-1"></i>&nbsp;previous</button><button *ngIf="myArray[13].length>0" class="btn btn-primary border-success align-items-center btn-success" (click)="next(13)" type="button">Next<i class="fa fa-angle-right ml-2"></i></button></div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+
+
+
+
+<div [ngSwitch]="counter">
+  <div *ngSwitchCase="14">
+    <div class="container mt-5">
+      <div class="d-flex justify-content-center row">
+          <div class="col-md-10 col-lg-10">
+              <div class="border">
+                  <div class="question bg-white p-3 border-bottom">
+                      <div class="d-flex flex-row justify-content-between align-items-center mcq">
+                          <h4>MCQ Quiz {{counter}}</h4><span>({{counter}} of 15)</span></div>
+                  </div>
+                  <div class="question bg-white p-3 border-bottom">
+                      <div class="d-flex flex-row align-items-center question-title">
+                          <h3 class="text-danger">Q.</h3>
+                          <h5 class="mt-1 ml-2">Which of the following country has largest population?</h5>
+                      </div><div class="ans ml-2">
+    <label class="radio"> <input type="radio" name="myArray[14]" [(ngModel)]="myArray[14]" value="brazil"> <span>Brazil</span>
+    </label>
+    </div><div class="ans ml-2">
+    <label class="radio"> <input type="radio" name="myArray[14]" [(ngModel)]="myArray[14]" value="Germany"> <span>Germany</span>
+    </label>
+    </div><div class="ans ml-2">
+    <label class="radio"> <input type="radio" name="myArray[14]" [(ngModel)]="myArray[14]" value="Indonesia"> <span>Indonesia</span>
+    </label>
+    </div><div class="ans ml-2">
+    <label class="radio"> <input type="radio" name="myArray[14]" [(ngModel)]="myArray[14]" value="Russia"> <span>Russia</span>
+    </label>
+    </div></div>
+                  <div class="d-flex flex-row justify-content-between align-items-center p-3 bg-white"><button class="btn btn-primary d-flex align-items-center btn-danger" (click)="previous(14)" type="button"><i class="fa fa-angle-left mt-1 mr-1"></i>&nbsp;previous</button><button *ngIf="myArray[14].length>0" class="btn btn-primary border-success align-items-center btn-success" (click)="next(14)" type="button">Next<i class="fa fa-angle-right ml-2"></i></button></div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+
+
+
+
+<div [ngSwitch]="counter">
+  <div *ngSwitchCase="15">
+    <div class="container mt-5">
+      <div class="d-flex justify-content-center row">
+          <div class="col-md-10 col-lg-10">
+              <div class="border">
+                  <div class="question bg-white p-3 border-bottom">
+                      <div class="d-flex flex-row justify-content-between align-items-center mcq">
+                          <h4>MCQ Quiz {{counter}}</h4><span>({{counter}} of 15)</span></div>
+                  </div>
+                  <div class="question bg-white p-3 border-bottom">
+                      <div class="d-flex flex-row align-items-center question-title">
+                          <h3 class="text-danger">Q.</h3>
+                          <h5 class="mt-1 ml-2">Which of the following country has largest population?</h5>
+                      </div><div class="ans ml-2">
+    <label class="radio"> <input type="radio" name="myArray[15]" [(ngModel)]="myArray[15]" value="brazil"> <span>Brazil</span>
+    </label>
+    </div><div class="ans ml-2">
+    <label class="radio"> <input type="radio" name="myArray[15]" [(ngModel)]="myArray[15]" value="Germany"> <span>Germany</span>
+    </label>
+    </div><div class="ans ml-2">
+    <label class="radio"> <input type="radio" name="myArray[15]" [(ngModel)]="myArray[15]" value="Indonesia"> <span>Indonesia</span>
+    </label>
+    </div><div class="ans ml-2">
+    <label class="radio"> <input type="radio" name="myArray[15]" [(ngModel)]="myArray[15]" value="Russia"> <span>Russia</span>
+    </label>
+    </div></div>
+                  <div class="d-flex flex-row justify-content-between align-items-center p-3 bg-white"><button class="btn btn-primary d-flex align-items-center btn-danger" (click)="previous(15)" type="button"><i class="fa fa-angle-left mt-1 mr-1"></i>&nbsp;previous</button><button *ngIf="myArray[15].length>0" class="btn btn-primary border-success align-items-center btn-success" (click)="finalAnswer(15)"  type="button">Submit<i class="fa fa-angle-right ml-2"></i></button></div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+
+
+</div>
