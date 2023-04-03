@@ -1,0 +1,588 @@
+<div style="margin-left: 40%;">
+<h3 style="color:green;" *ngIf="result>=10">Result Pass {{result}}/15</h3>
+ <h3 style="color:red;" *ngIf="result<10">Result Fail {{result}}/15</h3>
+ </div>
+<div style="background-color: rgb(230, 230, 230);">
+  <div >
+    <div class="container ">
+      <div class="d-flex justify-content-center row">
+          <div class="col-md-10 col-lg-10">
+              <div class="border mt-5">
+                  <div class="question bg-white p-3 border-bottom">
+                      <div class="d-flex flex-row justify-content-between align-items-center mcq">
+                          <h4>MCQ Quiz 1</h4><span>( 1 of 15)</span></div>
+                  </div>
+                  <div class="question bg-white p-3 border-bottom">
+                      <div class="d-flex flex-row align-items-center question-title">
+                          <h3 class="text-danger">Q.</h3>
+                          <h5 class="mt-1 ml-2">Which of the following country has largest population?</h5>
+                      </div><div class="ans ml-2">
+    <label class="radio"> <input type="radio" name="id[1]" [(ngModel)]="id[1]" value="Brazil" disabled> <span>Brazil</span><span style="color:Red;" *ngIf="id[1]=='Brazil'">✗</span>
+    </label>
+    </div><div class="ans ml-2">
+    <label class="radio"> <input type="radio" name="id[1]" [(ngModel)]="id[1]" value="Germany" disabled> <span>Germany</span><span style="color:Red;" *ngIf="id[1]=='Germany'">✗</span>
+    </label>
+    </div><div class="ans ml-2">
+    <label class="radio"> <input type="radio" name="id[1]" [(ngModel)]="id[1]" value="Indonesia" disabled> <span style="color: green;">Indonesia [Correct]</span>
+    </label>
+    </div><div class="ans ml-2">
+    <label class="radio"> <input type="radio" name="id[1]" [(ngModel)]="id[1]" value="Russia" disabled> <span>Russia</span><span style="color:Red;" *ngIf="id[1]=='Russia'">✗</span>
+    </label>
+    </div></div>
+                 <span style="color:green; margin-left: 10px;" *ngIf="id[1]=='Indonesia'">Correct Answer ✔</span>
+                 <span style="color:red; margin-left: 10px;" *ngIf="id[1]!='Indonesia'">Wrong Answer ✗</span>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+
+
+
+
+<div >
+  <div >
+    <div class="container mt-5">
+      <div class="d-flex justify-content-center row">
+          <div class="col-md-10 col-lg-10">
+              <div class="border">
+                  <div class="question bg-white p-3 border-bottom">
+                      <div class="d-flex flex-row justify-content-between align-items-center mcq">
+                          <h4>MCQ Quiz 2</h4><span>(2 of 15)</span></div>
+                  </div>
+                  <div class="question bg-white p-3 border-bottom">
+                      <div class="d-flex flex-row align-items-center question-title">
+                          <h3 class="text-danger">Q.</h3>
+                          <h5 class="mt-1 ml-2">With which does the power to extend or restrict the jurisdiction of the High Court rest?</h5>
+                      </div><div class="ans ml-2">
+    <label class="radio"> <input type="radio" name="id[2]" [(ngModel)]="id[2]" value="With the Parliament" disabled> <span style="color: green;"> With the Parliament [Correct] </span>
+    </label>
+    </div><div class="ans ml-2">
+    <label class="radio"> <input type="radio" name="id[2]" [(ngModel)]="id[2]" value="With the Legislative"disabled> <span>With the Legislative</span><span style="color:Red;" *ngIf="id[2]=='With the Legislative'">✗</span>
+    </label>
+    </div><div class="ans ml-2">
+    <label class="radio"> <input type="radio" name="id[2]" [(ngModel)]="id[2]" value="With the Council of Minister" disabled> <span> With the Council of Minister</span><span style="color:Red;" *ngIf="id[2]=='With the Council of Minister'">✗</span>
+    </label>
+    </div><div class="ans ml-2">
+    <label class="radio"> <input type="radio" name="id[2]" [(ngModel)]="id[2]" value="With the Rajya Sabha" disabled> <span>With the Rajya Sabha</span><span style="color:Red;" *ngIf="id[2]=='With the Rajya Sabha'">✗</span>
+    </label>
+    </div></div>
+                 <span style="color:green; margin-left: 10px;" *ngIf="id[2]=='With the Parliament'">Correct Answer ✔</span>
+                 <span style="color:red; margin-left: 10px;" *ngIf="id[2]!='With the Parliament'">Wrong Answer ✗</span>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+<div >
+  <div>
+    <div class="container mt-5">
+      <div class="d-flex justify-content-center row">
+          <div class="col-md-10 col-lg-10">
+              <div class="border">
+                  <div class="question bg-white p-3 border-bottom">
+                      <div class="d-flex flex-row justify-content-between align-items-center mcq">
+                          <h4>MCQ Quiz 3</h4><span>(3 of 15)</span></div>
+                  </div>
+                  <div class="question bg-white p-3 border-bottom">
+                      <div class="d-flex flex-row align-items-center question-title">
+                          <h3 class="text-danger">Q.</h3>
+                          <h5 class="mt-1 ml-2">Which rocks is transformed into marble?</h5>
+                      </div><div class="ans ml-2">
+    <label class="radio"> <input type="radio" name="id[3]" [(ngModel)]="id[3]" value="Limestone" disabled> <span style="color:green">Limestone [Correct]</span>
+    </label>
+    </div><div class="ans ml-2">
+    <label class="radio"> <input type="radio" name="id[3]" [(ngModel)]="id[3]" value="Black stone" disabled> <span>Black stone</span><span style="color:Red;" *ngIf="id[3]=='Black stone'">✗</span>
+    </label>
+    </div><div class="ans ml-2">
+    <label class="radio"> <input type="radio" name="id[3]" [(ngModel)]="id[3]" value="Red stone" disabled> <span>Red stone</span><span style="color:Red;" *ngIf="id[3]=='Red stone'">✗</span>
+    </label>
+    </div><div class="ans ml-2">
+    <label class="radio"> <input type="radio" name="id[3]" [(ngModel)]="id[3]" value="Grenite" disabled> <span>Grenite</span><span style="color:Red;" *ngIf="id[3]=='Grenite'">✗</span>
+    </label>
+    </div></div>
+                 <span style="color:green; margin-left: 10px;" *ngIf="id[3]=='Limestone'">Correct Answer ✔</span>
+                 <span style="color:red; margin-left: 10px;" *ngIf="id[3]!='Limestone'">Wrong Answer ✗</span>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+
+<div >
+  <div>
+    <div class="container mt-5">
+      <div class="d-flex justify-content-center row">
+          <div class="col-md-10 col-lg-10">
+              <div class="border">
+                  <div class="question bg-white p-3 border-bottom">
+                      <div class="d-flex flex-row justify-content-between align-items-center mcq">
+                          <h4>MCQ Quiz 4</h4><span>(4 of 15)</span></div>
+                  </div>
+                  <div class="question bg-white p-3 border-bottom">
+                      <div class="d-flex flex-row align-items-center question-title">
+                          <h3 class="text-danger">Q.</h3>
+                          <h5 class="mt-1 ml-2">Which ‘Englishmen was fellow of Gandhiji in South Africa?</h5>
+                      </div><div class="ans ml-2">
+    <label class="radio"> <input type="radio" name="id[4]" [(ngModel)]="id[4]" value="John delton" disabled> <span>John delton</span><span style="color:Red;" *ngIf="id[4]=='John delton'">✗</span>
+    </label>
+    </div><div class="ans ml-2">
+    <label class="radio"> <input type="radio" name="id[4]" [(ngModel)]="id[4]" value="Washington" disabled> <span>Washington</span><span style="color:Red;" *ngIf="id[4]=='Washington'">✗</span>
+    </label>
+    </div><div class="ans ml-2">
+    <label class="radio"> <input type="radio" name="id[4]" [(ngModel)]="id[4]" value="Polak" disabled> <span style="color:green">Polak [Correct]</span>
+    </label>
+    </div><div class="ans ml-2">
+    <label class="radio"> <input type="radio" name="id[4]" [(ngModel)]="id[4]" value="Trumph" disabled> <span>Trumph</span><span style="color:Red;" *ngIf="id[4]=='Trumph'">✗</span>
+    </label>
+    </div></div>
+                  <span style="color:green; margin-left: 10px;" *ngIf="id[4]=='Polak'">Correct Answer ✔</span>
+                  <span style="color:red; margin-left: 10px;" *ngIf="id[4]!='Polak'">Wrong Answer ✗</span>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+<div >
+  <div>
+    <div class="container mt-5">
+      <div class="d-flex justify-content-center row">
+          <div class="col-md-10 col-lg-10">
+              <div class="border">
+                  <div class="question bg-white p-3 border-bottom">
+                      <div class="d-flex flex-row justify-content-between align-items-center mcq">
+                          <h4>MCQ Quiz 5</h4><span>(5 of 15)</span></div>
+                  </div>
+                  <div class="question bg-white p-3 border-bottom">
+                      <div class="d-flex flex-row align-items-center question-title">
+                          <h3 class="text-danger">Q.</h3>
+                          <h5 class="mt-1 ml-2">Due to bite of mad dog the disease hydrophobia is caused by which virus??</h5>
+                      </div><div class="ans ml-2">
+    <label class="radio"> <input type="radio" name="id[5]" [(ngModel)]="id[5]" value="Dengue" disabled> <span>Dengue</span><span style="color:Red;" *ngIf="id[5]=='Dengue'">✗</span>
+    </label>
+    </div><div class="ans ml-2">
+    <label class="radio"> <input type="radio" name="id[5]" [(ngModel)]="id[5]" value="Chinkengunia" disabled> <span>Chinkengunia</span><span style="color:Red;" *ngIf="id[5]=='Chinkengunia'">✗</span>
+    </label>
+    </div><div class="ans ml-2">
+    <label class="radio"> <input type="radio" name="id[5]" [(ngModel)]="id[5]" value="Rabies virus" disabled> <span style="color:green;">Rabies virus [Correct]</span>
+    </label>
+    </div><div class="ans ml-2">
+    <label class="radio"> <input type="radio" name="id[5]" [(ngModel)]="id[5]" value="Cancer" disabled> <span>Cancer</span><span style="color:Red;" *ngIf="id[5]=='Cancer'">✗</span>
+    </label>
+    </div></div>
+                  <span style="color:green; margin-left: 10px;" *ngIf="id[5]=='Rabies virus'">Correct Answer ✔</span>
+                  <span style="color:red; margin-left: 10px;" *ngIf="id[5]!='Rabies virus'">Wrong Answer ✗</span>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+
+
+<div >
+  <div>
+    <div class="container mt-5">
+      <div class="d-flex justify-content-center row">
+          <div class="col-md-10 col-lg-10">
+              <div class="border">
+                  <div class="question bg-white p-3 border-bottom">
+                      <div class="d-flex flex-row justify-content-between align-items-center mcq">
+                          <h4>MCQ Quiz 6</h4><span>(6 of 15)</span></div>
+                  </div>
+                  <div class="question bg-white p-3 border-bottom">
+                      <div class="d-flex flex-row align-items-center question-title">
+                          <h3 class="text-danger">Q.</h3>
+                          <h5 class="mt-1 ml-2">Who appoints the Chief Election Commissioner of India?</h5>
+                      </div><div class="ans ml-2">
+    <label class="radio"> <input type="radio" name="id[6]" [(ngModel)]="id[6]" value="Prime Minister" disabled> <span style="color:green;">Prime Ministe [Correct]r</span>
+    </label>
+    </div><div class="ans ml-2">
+    <label class="radio"> <input type="radio" name="id[6]" [(ngModel)]="id[6]" value="Deputy Minister" disabled> <span>Deputy Minister</span><span style="color:Red;" *ngIf="id[6]=='Deputy Minister'">✗</span>
+    </label>
+    </div><div class="ans ml-2">
+    <label class="radio"> <input type="radio" name="id[6]" [(ngModel)]="id[6]" value="President" disabled> <span>President</span><span style="color:Red;" *ngIf="id[6]=='President'">✗</span>
+    </label>
+    </div><div class="ans ml-2">
+    <label class="radio"> <input type="radio" name="id[6]" [(ngModel)]="id[6]" value="Chief Minister" disabled> <span> Chief Minister</span><span style="color:Red;" *ngIf="id[6]=='Chief Minister'">✗</span>
+    </label>
+    </div></div>
+                <span style="color:green; margin-left: 10px;" *ngIf="id[6]=='Prime Minister'">Correct Answer ✔</span>
+                 <span style="color:red; margin-left: 10px;" *ngIf="id[6]!='Prime Minister'">Wrong Answer ✗</span>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+
+
+
+
+<div >
+  <div>
+    <div class="container mt-5">
+      <div class="d-flex justify-content-center row">
+          <div class="col-md-10 col-lg-10">
+              <div class="border">
+                  <div class="question bg-white p-3 border-bottom">
+                      <div class="d-flex flex-row justify-content-between align-items-center mcq">
+                          <h4>MCQ Quiz 7</h4><span>(7 of 15)</span></div>
+                  </div>
+                  <div class="question bg-white p-3 border-bottom">
+                      <div class="d-flex flex-row align-items-center question-title">
+                          <h3 class="text-danger">Q.</h3>
+                          <h5 class="mt-1 ml-2">First human heart transplant operation conducted by Dr. Christian Bernard on Louis Washkansky, was conducted in</h5>
+                      </div><div class="ans ml-2">
+    <label class="radio"> <input type="radio" name="id[7]" [(ngModel)]="id[7]" value="1958" disabled> <span>1958</span><span style="color:Red;" *ngIf="id[7]=='1958'">✗</span>
+    </label>
+    </div><div class="ans ml-2">
+    <label class="radio"> <input type="radio" name="id[7]" [(ngModel)]="id[7]" value="1922" disabled> <span>1922</span><span style="color:Red;" *ngIf="id[7]=='1922'">✗</span>
+    </label>
+    </div><div class="ans ml-2">
+    <label class="radio"> <input type="radio" name="id[7]" [(ngModel)]="id[7]" value="1967" disabled> <span style="color:green;">1967 [Correct]</span>
+    </label>
+    </div><div class="ans ml-2">
+    <label class="radio"> <input type="radio" name="id[7]" [(ngModel)]="id[7]" value="1968" disabled> <span>1968</span><span style="color:Red;" *ngIf="id[7]=='1968'">✗</span>
+    </label>
+    </div></div>
+                  <span style="color:green; margin-left: 10px;" *ngIf="id[7]=='1967'">Correct Answer ✔</span>
+                  <span style="color:red; margin-left: 10px;" *ngIf="id[7]!='1967'">Wrong Answer ✗</span>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+<div >
+  <div >
+    <div class="container mt-5">
+      <div class="d-flex justify-content-center row">
+          <div class="col-md-10 col-lg-10">
+              <div class="border">
+                  <div class="question bg-white p-3 border-bottom">
+                      <div class="d-flex flex-row justify-content-between align-items-center mcq">
+                          <h4>MCQ Quiz 8</h4><span>(8 of 15)</span></div>
+                  </div>
+                  <div class="question bg-white p-3 border-bottom">
+                      <div class="d-flex flex-row align-items-center question-title">
+                          <h3 class="text-danger">Q.</h3>
+                          <h5 class="mt-1 ml-2">Famous sculptures depicting art of love built some time in 950 AD – 1050 AD are</h5>
+                      </div><div class="ans ml-2">
+    <label class="radio"> <input type="radio" name="id[8]" [(ngModel)]="id[8]" value="Konark Temple" disabled> <span>Konark Temple</span><span style="color:Red;" *ngIf="id[8]=='Konark Temple'">✗</span>
+    </label>
+    </div><div class="ans ml-2">
+    <label class="radio"> <input type="radio" name="id[8]" [(ngModel)]="id[8]" value="Khajuraho temples" disabled> <span style="color:green;">Khajuraho temples [Correct]</span>
+    </label>
+    </div><div class="ans ml-2">
+    <label class="radio"> <input type="radio" name="id[8]" [(ngModel)]="id[8]" value="Mahabalipuram temples" disabled> <span>Mahabalipuram temples</span><span style="color:Red;" *ngIf="id[8]=='Mahabalipuram temples'">✗</span>
+    </label>
+    </div><div class="ans ml-2">
+    <label class="radio"> <input type="radio" name="id[8]" [(ngModel)]="id[8]" value="Sun temple" disabled> <span>Sun temple</span><span style="color:Red;" *ngIf="id[8]=='Sun temple'">✗</span>
+    </label>
+    </div></div>
+                <span style="color:green; margin-left: 10px;" *ngIf="id[8]=='Khajuraho temples'">Correct Answer ✔</span>
+                <span style="color:red; margin-left: 10px;" *ngIf="id[8]!='Khajuraho temples'">Wrong Answer ✗</span>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+
+
+
+
+<div >
+  <div>
+    <div class="container mt-5">
+      <div class="d-flex justify-content-center row">
+          <div class="col-md-10 col-lg-10">
+              <div class="border">
+                  <div class="question bg-white p-3 border-bottom">
+                      <div class="d-flex flex-row justify-content-between align-items-center mcq">
+                          <h4>MCQ Quiz 9</h4><span>(9 of 15)</span></div>
+                  </div>
+                  <div class="question bg-white p-3 border-bottom">
+                      <div class="d-flex flex-row align-items-center question-title">
+                          <h3 class="text-danger">Q.</h3>
+                          <h5 class="mt-1 ml-2">Which is the religion for which the Fire temple is the place of worship?</h5>
+                      </div><div class="ans ml-2">
+    <label class="radio"> <input type="radio" name="id[9]" [(ngModel)]="id[9]" value="Hinduism" disabled> <span>Hinduism</span><span style="color:Red;" *ngIf="id[9]=='Hinduism'">✗</span>
+    </label>
+    </div><div class="ans ml-2">
+    <label class="radio"> <input type="radio" name="id[9]" [(ngModel)]="id[9]" value="Jainism" disabled> <span>Jainism</span><span style="color:Red;" *ngIf="id[9]=='Jainism'">✗</span>
+    </label>
+    </div><div class="ans ml-2">
+    <label class="radio"> <input type="radio" name="id[9]" [(ngModel)]="id[9]" value="Zoroastrianism" disabled> <span style="color:green;">Zoroastrianism [Correct]</span>
+    </label>
+    </div><div class="ans ml-2">
+    <label class="radio"> <input type="radio" name="id[9]" [(ngModel)]="id[9]" value="Buddhism" disabled> <span>Buddhism</span><span style="color:Red;" *ngIf="id[9]=='Buddhism'">✗</span>
+    </label>
+    </div></div>
+                <span style="color:green; margin-left: 10px;" *ngIf="id[9]=='Zoroastrianism'">Correct Answer ✔</span>
+                 <span style="color:red; margin-left: 10px;" *ngIf="id[9]!='Zoroastrianism'">Wrong Answer ✗</span>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+
+
+
+
+<div >
+  <div>
+    <div class="container mt-5">
+      <div class="d-flex justify-content-center row">
+          <div class="col-md-10 col-lg-10">
+              <div class="border">
+                  <div class="question bg-white p-3 border-bottom">
+                      <div class="d-flex flex-row justify-content-between align-items-center mcq">
+                          <h4>MCQ Quiz 10</h4><span>(10 of 15)</span></div>
+                  </div>
+                  <div class="question bg-white p-3 border-bottom">
+                      <div class="d-flex flex-row align-items-center question-title">
+                          <h3 class="text-danger">Q.</h3>
+                          <h5 class="mt-1 ml-2">Where can Coral reefs be found in India?</h5>
+                      </div><div class="ans ml-2">
+    <label class="radio"> <input type="radio" name="id[10]" [(ngModel)]="id[10]" value="The Malabar Coast" disabled> <span>The Malabar Coast</span><span style="color:Red;" *ngIf="id[10]=='The Malabar Coast'">✗</span>
+    </label>
+    </div><div class="ans ml-2">
+    <label class="radio"> <input type="radio" name="id[10]" [(ngModel)]="id[10]" value="Rameshwaram" disabled> <span style="color:green">Rameshwaram [Correct]</span>
+    </label>
+    </div><div class="ans ml-2">
+    <label class="radio"> <input type="radio" name="id[10]" [(ngModel)]="id[10]" value="Trivandrum" disabled> <span>Trivandrum</span><span style="color:Red;" *ngIf="id[10]=='Trivandrum'">✗</span>
+    </label>
+    </div><div class="ans ml-2">
+    <label class="radio"> <input type="radio" name="id[10]" [(ngModel)]="id[10]" value="Mahabalipuram" disabled> <span>Mahabalipuram</span><span style="color:Red;" *ngIf="id[10]=='Mahabalipuram'">✗</span>
+    </label>
+    </div></div>
+                <span style="color:green; margin-left: 10px;" *ngIf="id[10]=='Rameshwaram'">Correct Answer ✔</span>
+                <span style="color:red; margin-left: 10px;" *ngIf="id[10]!='Rameshwaram'">Wrong Answer ✗</span>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+
+
+
+
+<div >
+  <div>
+    <div class="container mt-5">
+      <div class="d-flex justify-content-center row">
+          <div class="col-md-10 col-lg-10">
+              <div class="border">
+                  <div class="question bg-white p-3 border-bottom">
+                      <div class="d-flex flex-row justify-content-between align-items-center mcq">
+                          <h4>MCQ Quiz 11</h4><span>(11 of 15)</span></div>
+                  </div>
+                  <div class="question bg-white p-3 border-bottom">
+                      <div class="d-flex flex-row align-items-center question-title">
+                          <h3 class="text-danger">Q.</h3>
+                          <h5 class="mt-1 ml-2">The United Nations Organization has its Headquarters at</h5>
+                      </div><div class="ans ml-2">
+    <label class="radio"> <input type="radio" name="id[11]" [(ngModel)]="id[11]" value="Bali" disabled> <span>Bali</span><span style="color:Red;" *ngIf="id[11]=='Bali'">✗</span>
+    </label>
+    </div><div class="ans ml-2">
+    <label class="radio"> <input type="radio" name="id[11]" [(ngModel)]="id[11]" value="Hague" disabled> <span>Hague</span><span style="color:Red;" *ngIf="id[11]=='Hague'">✗</span>
+    </label>
+    </div><div class="ans ml-2">
+    <label class="radio"> <input type="radio" name="id[11]" [(ngModel)]="id[11]" value="New York, USA" disabled> <span style="color:green;">New York, USA [Correct]</span>
+    </label>
+    </div><div class="ans ml-2">
+    <label class="radio"> <input type="radio" name="id[11]" [(ngModel)]="id[11]" value="Washington DC" disabled> <span>Washington DC</span><span style="color:Red;" *ngIf="id[11]=='Washington DC'">✗</span>
+    </label>
+    </div></div>
+                  <span style="color:green; margin-left: 10px;" *ngIf="id[11]=='New York, USA'">Correct Answer ✔</span>
+                  <span style="color:red; margin-left: 10px;" *ngIf="id[11]!='New York, USA'">Wrong Answer ✗</span>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+
+<div >
+  <div>
+    <div class="container mt-5">
+      <div class="d-flex justify-content-center row">
+          <div class="col-md-10 col-lg-10">
+              <div class="border">
+                  <div class="question bg-white p-3 border-bottom">
+                      <div class="d-flex flex-row justify-content-between align-items-center mcq">
+                          <h4>MCQ Quiz 12</h4><span>(12 of 15)</span></div>
+                  </div>
+                  <div class="question bg-white p-3 border-bottom">
+                      <div class="d-flex flex-row align-items-center question-title">
+                          <h3 class="text-danger">Q.</h3>
+                          <h5 class="mt-1 ml-2">Objects at the surface of water can be viewed from a submarine under water by using this instrument.</h5>
+                      </div><div class="ans ml-2">
+    <label class="radio"> <input type="radio" name="id[12]" [(ngModel)]="id[12]" value="Stethescope" disabled> <span>Stethescope</span><span style="color:Red;" *ngIf="id[12]=='With the Legislative'">✗</span>
+    </label>
+    </div><div class="ans ml-2">
+    <label class="radio"> <input type="radio" name="id[12]" [(ngModel)]="id[12]" value="Periscope" disabled> <span style="color:green;">Periscope [Correct]</span>
+    </label>
+    </div><div class="ans ml-2">
+    <label class="radio"> <input type="radio" name="id[12]" [(ngModel)]="id[12]" value="Kaleidoscope" disabled> <span>Kaleidoscope</span><span style="color:Red;" *ngIf="id[12]=='With the Legislative'">✗</span>
+    </label>
+    </div><div class="ans ml-2">
+    <label class="radio"> <input type="radio" name="id[12]" [(ngModel)]="id[12]" value="Telescope" disabled> <span>Telescope</span><span style="color:Red;" *ngIf="id[12]=='With the Legislative'">✗</span>
+    </label>
+    </div></div>
+                    <span style="color:green; margin-left: 10px;" *ngIf="id[12]=='Periscope'">Correct Answer ✔</span>
+                    <span style="color:red; margin-left: 10px;" *ngIf="id[12]!='Periscope'">Wrong Answer ✗</span>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+
+
+<div >
+  <div>
+    <div class="container mt-5">
+      <div class="d-flex justify-content-center row">
+          <div class="col-md-10 col-lg-10">
+              <div class="border">
+                  <div class="question bg-white p-3 border-bottom">
+                      <div class="d-flex flex-row justify-content-between align-items-center mcq">
+                          <h4>MCQ Quiz 13</h4><span>(13 of 15)</span></div>
+                  </div>
+                  <div class="question bg-white p-3 border-bottom">
+                      <div class="d-flex flex-row align-items-center question-title">
+                          <h3 class="text-danger">Q.</h3>
+                          <h5 class="mt-1 ml-2">Which of the following musical instruments is played by Amjad Ali Khan?</h5>
+                      </div><div class="ans ml-2">
+    <label class="radio"> <input type="radio" name="id[13]" [(ngModel)]="id[13]" value="Veena" disabled> <span>Veena</span><span style="color:Red;" *ngIf="id[13]=='Veena'">✗</span>
+    </label>
+    </div><div class="ans ml-2">
+    <label class="radio"> <input type="radio" name="id[13]" [(ngModel)]="id[13]" value="Tabla" disabled> <span>Tabla</span><span style="color:Red;" *ngIf="id[13]=='Tabla'">✗</span>
+    </label>
+    </div><div class="ans ml-2">
+    <label class="radio"> <input type="radio" name="id[13]" [(ngModel)]="id[13]" value="Sarod" disabled> <span style="color:green;">Sarod [Correct]</span>
+    </label>
+    </div><div class="ans ml-2">
+    <label class="radio"> <input type="radio" name="id[13]" [(ngModel)]="id[13]" value="Guitar" disabled> <span>Guitar</span><span style="color:Red;" *ngIf="id[13]=='Guitar'">✗</span>
+    </label>
+    </div></div>
+                      <span style="color:green; margin-left: 10px;" *ngIf="id[13]=='Sarod'">Correct Answer ✔</span>
+                      <span style="color:red; margin-left: 10px;" *ngIf="id[13]!='Sarod'">Wrong Answer ✗</span>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+
+
+<div >
+  <div>
+    <div class="container mt-5">
+      <div class="d-flex justify-content-center row">
+          <div class="col-md-10 col-lg-10">
+              <div class="border">
+                  <div class="question bg-white p-3 border-bottom">
+                      <div class="d-flex flex-row justify-content-between align-items-center mcq">
+                          <h4>MCQ Quiz 14</h4><span>(14 of 15)</span></div>
+                  </div>
+                  <div class="question bg-white p-3 border-bottom">
+                      <div class="d-flex flex-row align-items-center question-title">
+                          <h3 class="text-danger">Q.</h3>
+                          <h5 class="mt-1 ml-2">Who created the famous Rock Garden of Chandigarh?</h5>
+                      </div><div class="ans ml-2">
+    <label class="radio"> <input type="radio" name="id[14]" [(ngModel)]="id[14]" value="Gaudi" disabled> <span>Gaudi</span><span style="color:Red;" *ngIf="id[14]=='Gaudi'">✗</span>
+    </label>
+    </div><div class="ans ml-2">
+    <label class="radio"> <input type="radio" name="id[14]" [(ngModel)]="id[14]" value="Saarinen" disabled> <span>Saarinen</span><span style="color:Red;" *ngIf="id[14]=='Saarinen'">✗</span>
+    </label>
+    </div><div class="ans ml-2">
+    <label class="radio"> <input type="radio" name="id[14]" [(ngModel)]="id[14]" value="Krishnarao Jaisim" disabled> <span>Krishnarao Jaisim</span><span style="color:Red;" *ngIf="id[14]=='Krishnarao Jaisim'">✗</span>
+    </label>
+    </div><div class="ans ml-2">
+    <label class="radio"> <input type="radio" name="id[14]" [(ngModel)]="id[14]" value="Nek Chand" disabled> <span style="color:green;">Nek Chand [Correct]</span>
+    </label>
+    </div></div>
+                <span style="color:green; margin-left: 10px;" *ngIf="id[14]=='Nek Chand'">Correct Answer ✔</span>
+                 <span style="color:red; margin-left: 10px;" *ngIf="id[14]!='Nek Chand'">Wrong Answer ✗</span>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+
+
+<div >
+  <div>
+    <div class="container mt-5">
+      <div class="d-flex justify-content-center row">
+          <div class="col-md-10 col-lg-10">
+              <div class="border">
+                  <div class="question bg-white p-3 border-bottom">
+                      <div class="d-flex flex-row justify-content-between align-items-center mcq">
+                          <h4>MCQ Quiz 15</h4><span>(15 of 15)</span></div>
+                  </div>
+                  <div class="question bg-white p-3 border-bottom">
+                      <div class="d-flex flex-row align-items-center question-title">
+                          <h3 class="text-danger">Q.</h3>
+                          <h5 class="mt-1 ml-2">NASA’s most famous space telescope goes by the name?</h5>
+                      </div><div class="ans ml-2">
+    <label class="radio"> <input type="radio" name="id[15]" [(ngModel)]="id[15]" value="Muble Satellite Telescope" disabled> <span>Muble Satellite Telescope</span><span style="color:Red;" *ngIf="id[15]=='Muble Satellite Telescope'">✗</span>
+    </label>
+    </div><div class="ans ml-2">
+    <label class="radio"> <input type="radio" name="id[15]" [(ngModel)]="id[15]" value="Hubble Space Telescope" disabled> <span style="color:green">Hubble Space Telescope [Correct]</span>
+    </label>
+    </div><div class="ans ml-2">
+    <label class="radio"> <input type="radio" name="id[15]" [(ngModel)]="id[15]" value="Humble Space Telescope" disabled> <span >Humble Space Telescope</span><span style="color:Red;" *ngIf="id[15]=='Humble Space Telescope'">✗</span>
+    </label>
+    </div><div class="ans ml-2">
+    <label class="radio"> <input type="radio" name="id[15]" [(ngModel)]="id[15]" value="Galaxy Satellite Telescope" disabled> <span>Galaxy Satellite Telescope</span><span style="color:Red;" *ngIf="id[15]=='Galaxy Satellite Telescope'">✗</span>
+    </label>
+    </div></div>
+                 <span style="color:green; margin-left: 10px;" *ngIf="id[15]=='Hubble Space Telescope'">Correct Answer ✔</span>
+                 <span style="color:red; margin-left: 10px;" *ngIf="id[15]!='Hubble Space Telescope'">Wrong Answer ✗</span>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+</div>

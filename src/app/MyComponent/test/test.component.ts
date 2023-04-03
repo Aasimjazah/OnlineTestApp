@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-
+import { Router, Routes } from '@angular/router';
 @Component({
   selector: 'app-test',
   templateUrl: './test.component.html',
@@ -12,6 +12,8 @@ export class TestComponent {
   args0:number=0;
 
   myArray: string[] = [];
+
+  constructor(private router:Router){}
 
   reset()
   {
@@ -29,8 +31,15 @@ export class TestComponent {
     this.counter= this.counter-1;
    // this.answer="";
   }
-  finalAnswer(args0:any)
+  finalAnswer()
   {
-    //   this.myArray[args0]=this.answer;
+   console.log("inside test component");
+    const ids = JSON.stringify(this.myArray);
+    console.log(ids);
+    this.router.navigate(
+      ['/showResult'],
+      { queryParams: { ids:  ids} }
+    );
+
   }
 }
